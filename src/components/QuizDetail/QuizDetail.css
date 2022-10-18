@@ -1,0 +1,10 @@
+.category-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.category-info img {
+    width: 100px;
+}

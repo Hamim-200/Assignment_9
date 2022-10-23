@@ -30,9 +30,9 @@ const Quiz = ({ quize, index }) => {
   console.log(quize.correctAnswer)
   return (
     <div className=' quizes-container '>
-      <div className='quiz-quiztion'>
+      <div className='quiz-question'>
         <h2>No: {index + 1} {question}</h2>
-        <button onClick={() => anser(correctAnswer)}   >See Answer  <FontAwesomeIcon icon={faEye}></FontAwesomeIcon> </button>
+        <button onClick={() => anser(correctAnswer)}>Answer<FontAwesomeIcon icon={faEye}></FontAwesomeIcon> </button>
       </div>
       <div className='quiz-options'>
         {

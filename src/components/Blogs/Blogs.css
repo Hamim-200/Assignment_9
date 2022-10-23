@@ -1,0 +1,14 @@
+.blog-container {
+    margin: 50px;
+    border: 2px solid #FF5733;
+    padding: 20px;
+}
+
+.blog-container p {
+    color: green;
+    font-size: medium;
+}
+
+.blog-container h3 {
+    color: red;
+}

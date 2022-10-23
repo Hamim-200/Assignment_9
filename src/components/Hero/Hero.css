@@ -1,16 +1,6 @@
-.hero-container {
-    background-image: url('./hero.jpg');
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.hero-container h2 {
-    padding: 100px;
+.hero-container h3 {
+    padding: 50px;
     font-size: 50px;
     font-weight: bold;
-    color: #22C55E;
+    color: blue;
 }

@@ -6,17 +6,16 @@ import './Home.css'
 
 const Home = () => {
     const categories = useLoaderData()
-   
+
     return (
         <div >
-        
             <Hero></Hero>
-       <div className='category-container'>
-       {
-            categories.data.map(category => <Category key={category.id} category={category}></Category> )
-           }
-       </div>
-          
+            <div className='category-container'>
+                {
+                    categories.data.map(category => <Category key={category.id} category={category}></Category>)
+                }
+            </div>
+
         </div>
     );
 };

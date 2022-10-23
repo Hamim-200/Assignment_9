@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
-
-
 const Analytics = () => {
     const [quiz, setQuiz] = useState([]);
     const [totalQuiz, setTotalQuiz] = useState([]);
@@ -22,34 +20,33 @@ const Analytics = () => {
             }
             setQuiz(quizName);
             setTotalQuiz(totalQuiz)
-          
-          
+
             console.log(quiz)
             console.log(totalQuiz);
         }
 
         getQuiZData()
     },);
-  
+
     const data = [
         {
             name: quiz,
-            total_quiz:totalQuiz.at(0),
+            total_quiz: totalQuiz.at(0),
 
         },
         {
             name: quiz,
-            total_quiz:totalQuiz.at(1),
+            total_quiz: totalQuiz.at(1),
 
         },
         {
             name: quiz,
-            total_quiz:totalQuiz.at(2),
+            total_quiz: totalQuiz.at(2),
 
         },
         {
             name: quiz,
-            total_quiz:totalQuiz.at(3),
+            total_quiz: totalQuiz.at(3),
 
         },
     ]
@@ -57,13 +54,13 @@ const Analytics = () => {
     return (
         <div className='lg:w-[40%]  mx-auto mt-7 sm:ms-0 custom'>
             <div className='justify-items-center '>
-                <BarChart  width={370} height={400} data={data}>
+                <BarChart width={370} height={400} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="total_quiz" fill="#82ca9d" />
+                    <Bar dataKey="total_quiz" fill="#FF5733" />
                 </BarChart>
             </div>
         </div>

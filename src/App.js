@@ -1,4 +1,3 @@
-
 import './App.css';
 import Main from './components/Main/Main';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -10,14 +9,17 @@ import Error from './components/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
-    {path: '/', element: <Main></Main>, errorElement: <Error></Error> ,children: [
-      {path: '/', loader: async () => fetch('https://openapi.programming-hero.com/api/quiz') , element: <Home> </Home> },
-      {path: '/home', loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'), element: <Home> </Home> },
-      {path: '/category/:quizId', loader: async({params}) => fetch(` https://openapi.programming-hero.com/api/quiz/${params.quizId}`), element: <QuizDetail></QuizDetail> },
-      {path:'/analytics', loader: async () => fetch('https://openapi.programming-hero.com/api/quiz') ,element: <Analytics></Analytics>  },
-      {path: '/blogs', element: <Blogs></Blogs> }
-    ] }
+    {
+      path: '/', element: <Main></Main>, errorElement: <Error></Error>, children: [
+        { path: '/', loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'), element: <Home> </Home> },
+        { path: '/home', loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'), element: <Home> </Home> },
+        { path: '/category/:quizId', loader: async ({ params }) => fetch(` https://openapi.programming-hero.com/api/quiz/${params.quizId}`), element: <QuizDetail></QuizDetail> },
+        { path: '/analytics', loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'), element: <Analytics></Analytics> },
+        { path: '/blogs', element: <Blogs></Blogs> }
+      ]
+    }
   ])
+
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>

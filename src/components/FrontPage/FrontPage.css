@@ -1,0 +1,12 @@
+.container-FP {
+    margin: 50px;
+    background-color: cadetblue;
+    padding: 30px;
+}
+
+.container-FP li {
+    border: 2px solid white;
+    padding: 20px;
+    margin: 30px;
+    color: chartreuse;
+}

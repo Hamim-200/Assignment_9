@@ -1,22 +1,25 @@
-.category{
-    border: 1px solid green;
+.category {
     width: 350px;
+    margin-left: 60px;
     padding: 20px;
-    background-color: #5D49E4;
+    background-color: green;
     color: white;
     border-radius: 10px;
 }
+
 .category img {
     width: 300px;
 }
-.category-detail{
+
+.category-detail {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  
+
 }
+
 .start-btn {
-    background-color: #7AA93C;
+    background-color: blue;
     border: none;
     padding: 10px;
     color: white;

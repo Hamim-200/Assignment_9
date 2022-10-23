@@ -1,0 +1,26 @@
+.category{
+    border: 1px solid green;
+    width: 350px;
+    padding: 20px;
+    background-color: #5D49E4;
+    color: white;
+    border-radius: 10px;
+}
+.category img {
+    width: 300px;
+}
+.category-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+.start-btn {
+    background-color: #7AA93C;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+}

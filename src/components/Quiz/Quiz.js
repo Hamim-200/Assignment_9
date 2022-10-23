@@ -8,7 +8,7 @@ const Quiz = ({ quize, index }) => {
     const { question, correctAnswer } = quize
 
     const answer = correctAnswer => {
-        alert('Correct answer is:', correctAnswer)
+        Swal.fire('Correct answer is:', correctAnswer)
     }
     const test = (e) => {
         if (e === correctAnswer) {
